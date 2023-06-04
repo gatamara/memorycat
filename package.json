@@ -1,0 +1,28 @@
+{
+  "name": "memorycat",
+  "private": true,
+  "homepage": "https://gatamara.github.io/memorycat",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "canvas-confetti": "1.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.6.0",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^2.2.0",
+    "gh-pages": "^5.0.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3"
+  }
+}
