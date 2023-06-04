@@ -108,7 +108,7 @@ function App() {
       <div className='container'>
         <header>
           <img id="cat-header" src="/img/gato.png" alt="" />
-          <h1 className='title'>Memory Cat</h1>
+          <h1 className='title'>Memory cat</h1>
           <img id="cat-header" src="/img/gato.png" alt="" />
         </header>
         <div className='main'>
