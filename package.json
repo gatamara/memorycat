@@ -1,7 +1,7 @@
 {
   "name": "memorycat",
   "private": true,
-  "homepage": "http://gatamara.github.io/memorycat",
+  "homepage": "https://gatamara.github.io/memorycat/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
