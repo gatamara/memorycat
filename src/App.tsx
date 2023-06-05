@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 import { WinnerMessage } from './components/WinnerMessage'
 import gatosImg from './assets/img/gato.png'
 import huellaGato from './assets/img/huella.png'
+import IMAGES from './index.json'
 
 
 const initialIsFlipped: boolean[] = Array(12).fill(false)

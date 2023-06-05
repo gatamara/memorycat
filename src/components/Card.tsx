@@ -1,5 +1,5 @@
 
-import { Elemento } from "../bd"
+import { Elemento } from "../bd";
 
 
 
@@ -14,8 +14,6 @@ export const Card = ({ par, imagen, isFlipped, handleClick, position }: Props) =
 
   const urlImage = `src/assets/img/${imagen}`
   console.log(urlImage);
-
-
 
 
   return (
