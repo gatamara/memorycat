@@ -1,12 +1,12 @@
 {
   "name": "memorycat",
   "private": true,
-  "homepage": "https://gatamara.github.io/memorycat/",
+  "homepage": "https://gatamara.github.io/memorycat",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
