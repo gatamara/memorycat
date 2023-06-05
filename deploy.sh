@@ -14,4 +14,4 @@ git add -A
 
 git commit -M 'deploy'
 
-#git push -f git@github.com:gatamara/vite-react-memorycat.git main:gh-pages
+git push -f git@github.com:gatamara/memorycat.git main:gh-pages
