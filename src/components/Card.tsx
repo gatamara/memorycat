@@ -1,16 +1,20 @@
 
 import { Elemento } from "../bd"
 
+
+
 export interface Props extends Elemento {
   isFlipped: boolean
   handleClick: (position: number) => void
   position: number
 }
 
-export const Card = ({ id, par, imagen, isFlipped, handleClick, position }: Props) => {
+export const Card = ({ par, imagen, isFlipped, handleClick, position }: Props) => {
 
 
-  const urlImage = `/img/${imagen}`
+  const urlImage = `src/assets/img/${imagen}`
+  console.log(urlImage);
+
 
 
 
