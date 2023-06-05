@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages 
+name: DEPLOY TO GITHUB PAGES
 
 on:
   push:
@@ -7,16 +7,19 @@ on:
 
 jobs:
   build-and-deploy:
+    name: Build and deploy
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: Install dependencies
         run: npm install
-      - name: Build
-        run: npm run build
+
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          personal_token: ${{ secrets.ACCESS_TOKEN_GHP }}
-          publish_dir: ./dist
+        run: |
+          git config --global user.email "gatamara29@gmail.com"
+          git config --global user.name "Tamara Salinas"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} 
+          npm run deploy
