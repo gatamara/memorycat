@@ -4,7 +4,8 @@ import confetti, { reset } from "canvas-confetti"
 import { initialElementos, Elemento, ElementoPosition } from './bd'
 import { useEffect, useState } from 'react'
 import { WinnerMessage } from './components/WinnerMessage'
-
+import gatosImg from './assets/img/gato.png'
+import huellaGato from './assets/img/huella.png'
 
 
 const initialIsFlipped: boolean[] = Array(12).fill(false)
@@ -107,9 +108,9 @@ function App() {
     <>
       <div className='container'>
         <header>
-          <img id="cat-header" src="/img/gato.png" alt="" />
+          <img id="cat-header" src={gatosImg} alt="" />
           <h1 className='title'>Memory cat</h1>
-          <img id="cat-header" src="/img/gato.png" alt="" />
+          <img id="cat-header" src={gatosImg} alt="" />
         </header>
         <div className='main'>
           <section className="container-card">
@@ -123,7 +124,7 @@ function App() {
         </div>
       </div>
       <footer>
-        <div id="pieDePagina"><span> Juego creado por Tamara Salinas </span> <img src="/img/huella.png" alt="" /></div>
+        <div id="pieDePagina"><span> Juego creado por Tamara Salinas </span> <img src={huellaGato} alt="" /></div>
       </footer>
     </>
   )

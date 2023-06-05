@@ -6,7 +6,6 @@ body {
   background-image: url(/img/wallpaper.jpg);
   background-size: cover;
   font-family: "Poppins", sans-serif;
-  font-family: "Edu NSW ACT Foundation", cursive;
   margin: 0;
   display: grid;
   grid-template-rows: auto 1fr auto;
