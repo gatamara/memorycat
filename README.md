@@ -27,3 +27,12 @@ code .
 ## Ver sitio web
 
 Para ver una demostracion del sitio web alojado en [Github Pages](https://pages.github.com/), puede visitar el siguiente [MemoryCat](https://gatamara.github.io/memorycat/)
+
+## Tecnologias utilizadas
+
+- HTML
+- CSS
+- React JS
+- Typescript
+- Github Actions (CI/CD)
+- Github Pages
