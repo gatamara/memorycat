@@ -9,10 +9,14 @@ export interface Props extends Elemento {
   position: number
 }
 
+const getUrlImage = (img: string) => {
+  return new URL(`../assets/img/${img}`, import.meta.url).href
+}
+
 export const Card = ({ par, imagen, isFlipped, handleClick, position }: Props) => {
 
 
-  const urlImage = `src/assets/img/${imagen}`
+  const urlImage = getUrlImage(imagen)
   console.log(urlImage);
 
 

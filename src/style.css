@@ -62,6 +62,24 @@ h1 {
 .card.flip {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.card>.face-front>.head-cat>.head__eye,
+.card>.face-front>.head-cat>.nose,
+.card>.face-front>.head-cat>.bigotes {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s, opacity 1s ease;
+}
+
+.card.flip>.face-front>.head-cat>.head__eye,
+.card.flip>.face-front>.head-cat>.nose,
+.card.flip>.face-front>.head-cat>.bigotes {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s ease;
 }
 
 .head-cat {
@@ -86,7 +104,9 @@ h1 {
   animation-name: blink;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  backface-visibility: hidden;
+  -webkit-animation-name: blink;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
 }
 
 @keyframes blink {
@@ -96,11 +116,13 @@ h1 {
 
   5% {
     transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
     height: 1px;
   }
 
   10% {
     transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
     height: 22px;
   }
 }
@@ -539,7 +561,6 @@ footer {
 @media only screen and (min-width: 601px) and (max-width: 800px) {
   .main {
     position: relative;
-
   }
 
   .container-card {
@@ -562,12 +583,11 @@ footer {
     transform-style: preserve-3d;
     transition: all 0.8s ease;
     transform: scale(1);
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all 0.8s ease;
+    -webkit-transform: scale(1);
   }
 
-  /* .card:active {
-    transform: scale(0.97);
-    transition: transform 0.2s;
-  } */
   .head-cat {
     background-color: ivory;
     position: absolute;
@@ -752,6 +772,9 @@ footer {
     transform-style: preserve-3d;
     transition: all 0.8s ease;
     transform: scale(1);
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all 0.8s ease;
+    -webkit-transform: scale(1);
   }
 
   .head-cat {
@@ -776,20 +799,25 @@ footer {
     animation-name: blink;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    -webkit-animation-name: blink;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
   }
 
   @keyframes blink {
     0% {
-      height: 15px;
+      height: 11px;
     }
 
     5% {
       transform: translate(0px, 5px);
+      -webkit-transform: translate(0px, 5px);
       height: 1px;
     }
 
     10% {
       transform: translate(0px, 0px);
+      -webkit-transform: translate(0px, 0px);
       height: 11px;
     }
   }
